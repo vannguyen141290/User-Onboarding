@@ -23,3 +23,8 @@ code {
   margin: 0;
   padding: 0;
 }
+
+#pwRequirement {
+  color: #9fa8b5;
+  font-size: 0.7rem;
+}

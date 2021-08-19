@@ -48,6 +48,7 @@ export default function Form(props) {
                     placeholder='password'
                     onChange={onChange}
                 /><p className='error'>{errors.password}</p>
+                <p id='pwRequirement'>password requires at least 8 characters, at most 250 characters, at least 1 lowercase letter, at least 1 uppercase letter, at least 1 number and at least 1 symbol.</p>
                 <br/>
                 <label htmlFor='dateOfBirth'/>Date of Birth
                 <input

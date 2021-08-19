@@ -36,7 +36,7 @@ function App() {
     axios.get('https://reqres.in/api/users')
       .then(res => {
         setUsers(res.data.data);
-        setFormValues(initialFormValues);
+
       })
       .catch(err => console.log(err))
   }
@@ -52,6 +52,7 @@ function App() {
         setUsers([ ...users, res.data])
       })
       .catch(err => console.log(err))
+      setFormValues(initialFormValues);
   }
 
   //get new Users when onchange and sumit
