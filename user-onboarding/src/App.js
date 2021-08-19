@@ -5,6 +5,7 @@ import schema from './components/schema';
 import axios from 'axios';
 import * as yup from 'yup';
 
+
 const initialFormValues = {
   name: '',
   email: '',
@@ -67,8 +68,9 @@ function App() {
     //validate first
     validation(name, value);
     //set formvalues
-    setFormValues({ ...formValues, [name]: value })
+    setFormValues({...formValues, [name]: value })
   }
+
 
   // enable submit button
   useEffect(() => {

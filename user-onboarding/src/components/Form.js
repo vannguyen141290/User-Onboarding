@@ -56,7 +56,7 @@ export default function Form(props) {
                     type='text'
                     onChange={onChange}
                     value={formValues.dateOfBirth}
-                    placeholder='dd/mm/yyyy'
+                    placeholder='mm/dd/yyyy'
                 /><p className='error'>{errors.dateOfBirth}</p>
                 <br/>
                 <p className='error'>{errors.gender}</p>
